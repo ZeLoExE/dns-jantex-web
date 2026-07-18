@@ -16,6 +16,7 @@
         <SmartConnect />
       </div>
     </main>
+    <ToastContainer />
   </div>
 </template>
 
@@ -28,6 +29,7 @@ import TagFilter from './components/TagFilter.vue'
 import ProviderList from './components/ProviderList.vue'
 import NetworkDashboard from './components/NetworkDashboard.vue'
 import SmartConnect from './components/SmartConnect.vue'
+import ToastContainer from './components/ToastContainer.vue'
 
 const themeStore = useThemeStore()
 const providersStore = useProvidersStore()
