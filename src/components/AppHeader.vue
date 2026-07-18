@@ -10,7 +10,7 @@
         <span class="active-label">Active:</span>
         <span class="active-name">{{ activeProvider.name }}</span>
       </div>
-      <button class="theme-toggle" @click="themeStore.toggle()" :title="themeStore.isDark ? 'Switch to Light' : 'Switch to Dark'">
+      <button class="theme-toggle" @click="themeStore.toggle()" :title="themeStore.isDark ? 'Switch to Light' : 'Switch to Dark'" aria-label="Toggle dark mode">
         <span v-if="themeStore.isDark">☀️</span>
         <span v-else>🌙</span>
       </button>

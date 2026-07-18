@@ -6,6 +6,7 @@
         :key="tag"
         class="tag-chip"
         :class="{ active: selectedTags.includes(tag) }"
+        :aria-pressed="selectedTags.includes(tag)"
         @click="$emit('toggle', tag)"
       >
         {{ tagLabels[tag] }}
@@ -78,6 +79,6 @@ const tags = allTags
 }
 
 .clear-all:hover {
-  color: var(--error);
+  color: var(--color-error);
 }
 </style>

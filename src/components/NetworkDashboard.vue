@@ -66,8 +66,13 @@ function drawChart() {
   // Clear
   ctx.clearRect(0, 0, width, height)
 
+  // Read theme colors
+  const styles = getComputedStyle(canvas)
+  const gridColor = styles.getPropertyValue('--border-color').trim() || '#334155'
+  const lineColor = styles.getPropertyValue('--color-primary').trim() || '#6366f1'
+
   // Draw grid
-  ctx.strokeStyle = '#334155'
+  ctx.strokeStyle = gridColor
   ctx.lineWidth = 1
   for (let i = 0; i <= 4; i++) {
     const y = (height / 4) * i
@@ -79,7 +84,7 @@ function drawChart() {
 
   // Draw line
   if (latencyHistory.value.length > 1) {
-    ctx.strokeStyle = '#6366f1'
+    ctx.strokeStyle = lineColor
     ctx.lineWidth = 2
     ctx.beginPath()
 

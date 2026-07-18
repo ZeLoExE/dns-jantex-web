@@ -7,8 +7,9 @@
       @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       placeholder="Search DNS by name or IP..."
       class="search-input"
+      aria-label="Search DNS providers"
     />
-    <button v-if="modelValue" class="clear-btn" @click="$emit('update:modelValue', '')">
+    <button v-if="modelValue" class="clear-btn" @click="$emit('update:modelValue', '')" aria-label="Clear search">
       ✕
     </button>
   </div>
@@ -52,7 +53,7 @@ defineEmits<{
 .search-input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 0 3px var(--color-primary-alpha);
 }
 
 .search-input::placeholder {

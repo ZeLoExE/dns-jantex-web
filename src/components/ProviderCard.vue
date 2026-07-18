@@ -1,5 +1,5 @@
 <template>
-  <div class="provider-card" :class="{ active: isActive }" @click="$emit('select', provider)">
+  <div class="provider-card" :class="{ active: isActive }" @click="$emit('select', provider)" @keydown.enter="$emit('select', provider)" @keydown.space.prevent="$emit('select', provider)" tabindex="0" role="button">
     <div class="card-header">
       <div class="provider-info">
         <h3 class="provider-name">{{ provider.name }}</h3>
@@ -70,7 +70,7 @@ const latencyClass = computed(() => {
 
 .provider-card.active {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 0 3px var(--color-primary-alpha);
 }
 
 .card-header {
