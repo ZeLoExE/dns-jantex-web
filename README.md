@@ -9,7 +9,8 @@
   <img src="https://img.shields.io/badge/vue-3.4+-42b883?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue">
   <img src="https://img.shields.io/badge/typescript-5.3+-3178c6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="License">
-  <a href="https://92a18fcd.dns-jantex-web.pages.dev/"><img src="https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Website"></a>
+  <a href="https://92a18fcd.dns-jantex-web.pages.dev/"><img src="https://img.shields.io/badge/Web_App-Live-green?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Web App"></a>
+  <a href="https://dns-jantex.pages.dev/"><img src="https://img.shields.io/badge/Landing_Page-Live-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Landing Page"></a>
 </p>
 
 <p align="center">
