@@ -6,6 +6,10 @@
       <span class="version">Web v1.0</span>
     </div>
     <div class="actions">
+      <div class="active-dns" v-if="activeProvider">
+        <span class="active-label">Active:</span>
+        <span class="active-name">{{ activeProvider.name }}</span>
+      </div>
       <button class="theme-toggle" @click="themeStore.toggle()" :title="themeStore.isDark ? 'Switch to Light' : 'Switch to Dark'">
         <span v-if="themeStore.isDark">☀️</span>
         <span v-else>🌙</span>
@@ -15,9 +19,13 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useThemeStore } from '../stores/theme'
+import { useProvidersStore } from '../stores/providers'
 
 const themeStore = useThemeStore()
+const providersStore = useProvidersStore()
+const activeProvider = computed(() => providersStore.activeProvider)
 </script>
 
 <style scoped>
@@ -54,7 +62,24 @@ const themeStore = useThemeStore()
 
 .actions {
   display: flex;
-  gap: var(--spacing-sm);
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.active-dns {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+}
+
+.active-label {
+  color: var(--text-muted);
+}
+
+.active-name {
+  color: var(--color-success);
+  font-weight: 500;
 }
 
 .theme-toggle {
