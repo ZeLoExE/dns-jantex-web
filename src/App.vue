@@ -13,6 +13,7 @@
       </div>
       <div class="right-panel">
         <NetworkDashboard />
+        <SmartConnect />
       </div>
     </main>
   </div>
@@ -26,6 +27,7 @@ import SearchBar from './components/SearchBar.vue'
 import TagFilter from './components/TagFilter.vue'
 import ProviderList from './components/ProviderList.vue'
 import NetworkDashboard from './components/NetworkDashboard.vue'
+import SmartConnect from './components/SmartConnect.vue'
 
 const themeStore = useThemeStore()
 const providersStore = useProvidersStore()
