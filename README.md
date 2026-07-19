@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="License">
   <a href="https://92a18fcd.dns-jantex-web.pages.dev/"><img src="https://img.shields.io/badge/Web_App-Live-green?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Web App"></a>
   <a href="https://dist-qj6odwi8b-jan-tex.vercel.app/"><img src="https://img.shields.io/badge/Vercel-Live-blue?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"></a>
+  <a href="https://dns-jantex.vercel.app/"><img src="https://img.shields.io/badge/Landing_Page-Live-purple?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Landing Page"></a>
 </p>
 
 <p align="center">
@@ -21,10 +22,11 @@
 
 ## Live Demo
 
-| Host | URL |
+| Site | URL |
 |------|-----|
+| **Web App** | [https://dist-qj6odwi8b-jan-tex.vercel.app/](https://dist-qj6odwi8b-jan-tex.vercel.app/) |
+| **Landing Page** | [https://dns-jantex.vercel.app/](https://dns-jantex.vercel.app/) |
 | **Cloudflare Pages** | [https://92a18fcd.dns-jantex-web.pages.dev/](https://92a18fcd.dns-jantex-web.pages.dev/) |
-| **Vercel** | [https://dist-qj6odwi8b-jan-tex.vercel.app/](https://dist-qj6odwi8b-jan-tex.vercel.app/) |
 
 ## Desktop Version
 
