@@ -9,8 +9,8 @@
   <img src="https://img.shields.io/badge/vue-3.4+-42b883?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue">
   <img src="https://img.shields.io/badge/typescript-5.3+-3178c6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="License">
-  <a href="https://92a18fcd.dns-jantex-web.pages.dev/"><img src="https://img.shields.io/badge/Web_App-Live-green?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Web App"></a>
-  <a href="https://dns-jantex.vercel.app/"><img src="https://img.shields.io/badge/Landing_Page-Live-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Landing Page"></a>
+  <a href="https://92a18fcd.dns-jantex-web.pages.dev/"><img src="https://img.shields.io/badge/Web_App-Live-green?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Web App"></a>
+  <a href="https://dist-qj6odwi8b-jan-tex.vercel.app/"><img src="https://img.shields.io/badge/Vercel-Live-blue?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"></a>
 </p>
 
 <p align="center">
@@ -21,7 +21,10 @@
 
 ## Live Demo
 
-**[https://92a18fcd.dns-jantex-web.pages.dev/](https://92a18fcd.dns-jantex-web.pages.dev/)**
+| Host | URL |
+|------|-----|
+| **Cloudflare Pages** | [https://92a18fcd.dns-jantex-web.pages.dev/](https://92a18fcd.dns-jantex-web.pages.dev/) |
+| **Vercel** | [https://dist-qj6odwi8b-jan-tex.vercel.app/](https://dist-qj6odwi8b-jan-tex.vercel.app/) |
 
 ## Desktop Version
 
@@ -69,6 +72,7 @@ Looking for the full-featured Windows desktop application?
 | Pinia | State management |
 | Pure CSS | Custom styling with CSS variables |
 | Cloudflare Pages | Hosting and deployment |
+| Vercel | Hosting and deployment |
 
 ## Project Structure
 
@@ -140,6 +144,19 @@ npx wrangler login
 npx wrangler pages deploy ./dist --project-name=dns-jantex-web
 ```
 
+### Deploy to Vercel
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy
+vercel deploy ./dist -y
+```
+
 ## DNS Providers Included
 
 | Category | Providers |
@@ -182,6 +199,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Vue.js](https://vuejs.org/) - The progressive JavaScript framework
 - [Vite](https://vitejs.dev/) - Next generation frontend tooling
 - [Cloudflare Pages](https://pages.cloudflare.com/) - Fast, secure hosting
+- [Vercel](https://vercel.com/) - Frontend cloud platform
 - [DNS Jantex Desktop](https://github.com/ZeLoExE/dns-jantex) - Original Windows application
 
 ## Support
